@@ -8,11 +8,21 @@
     "dev": "npm run type-check && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "eslint": "eslint --fix",
+    "eslintCheck": "eslint"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "prettier": "^3.4.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-plugin-eslint": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -22,8 +32,10 @@
     "@types/react-dom": "^18.3.5",
     "@types/stylelint": "^14.0.0",
     "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.17.0",
-    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
     "stylelint": "^16.13.2",
