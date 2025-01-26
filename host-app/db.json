@@ -1,13 +1,28 @@
 {
-    "posts": [
-        { "id": "1", "title": "a title", "views": 100 },
-        { "id": "2", "title": "another title", "views": 200 }
-    ],
-    "comments": [
-        { "id": "1", "text": "a comment about post 1", "postId": "1" },
-        { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-        "name": "typicode"
+  "todos": [
+    {
+      "id": "todo1",
+      "title": "John",
+      "description": "My first todo"
+    },
+    {
+      "id": "todo2",
+      "title": "Jane",
+      "description": "My second todo"
+    },
+    {
+      "id": "todo4",
+      "title": "Jill",
+      "description": "My fourth todo"
+    },
+    {
+      "id": "cda0"
+    },
+    {
+      "id": "7833"
+    },
+    {
+      "id": "5c9b"
     }
+  ]
 }

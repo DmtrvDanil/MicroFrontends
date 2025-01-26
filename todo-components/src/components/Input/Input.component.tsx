@@ -6,7 +6,7 @@ export const Input = (props) => {
         <form
             onSubmit={(e) => {
                 e.preventDefault();
-                onSubmit(e);
+                onSubmit('123456');
             }}
         >
             <div className="flex-row">
