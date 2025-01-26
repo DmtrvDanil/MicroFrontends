@@ -4,16 +4,24 @@ import { Input } from "todo_components/Input";
 
 function App() {
   const [newTodo, setNewTodo] = useState("");
+
   const [todos, setTodos] = useState([]);
+
   const onSubmit = () => {
+    //TODO fix 
+    // @ts-ignore
     setTodos((prev) => [...prev, newTodo]);
     setNewTodo("");
   };
+
 
   return (
     <>
       <Input value={newTodo} onChange={setNewTodo} onSubmit={onSubmit} />
       <List items={todos} />
+
+      {/* <Input />
+      <List /> */}
     </>
   );
 }
