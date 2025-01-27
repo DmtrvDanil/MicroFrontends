@@ -1,9 +1,12 @@
 import { AppThunk } from "../../../shared";
-import { TodoId } from "../../../types";
+import { TodosType } from "../../../types";
 import { todosApi } from "../api";
 
-export const addTodo = (todoId: TodoId): AppThunk<Promise<void>> => async (dispatch) => {
-    await dispatch(todosApi.endpoints.addTodo.initiate(todoId)).unwrap();
+export const addTodo = (requestBody: TodosType): AppThunk<Promise<void>> => async (dispatch) => {
+
+
+
+    await dispatch(todosApi.endpoints.addTodo.initiate(requestBody)).unwrap();
 
 
     await dispatch(

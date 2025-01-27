@@ -1,12 +1,13 @@
 import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export const Input = (props) => {
-    const { value, onChange, onSubmit } = props;
+    const { value, onChange, onSubmit: onSubmitProp } = props;
     return (
         <form
             onSubmit={(e) => {
                 e.preventDefault();
-                onSubmit('123456');
+                onSubmitProp({ id: uuidv4(), text: value });
             }}
         >
             <div className="flex-row">

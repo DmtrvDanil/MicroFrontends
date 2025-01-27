@@ -3,8 +3,8 @@ import { List } from "todo_components/List";
 import { Input } from "todo_components/Input";
 import { todosApi } from "./modules/todos/api";
 import { useAppDispath } from "./shared/redux";
-import { TodoId } from "./types";
 import { addTodo } from "./modules/todos/model/add-todo";
+import { TodosType } from "./types";
 
 function App() {
   const [newTodo, setNewTodo] = useState("");
@@ -14,11 +14,9 @@ function App() {
 
   const { data: todos } = todosApi.useGetTodosQuery();
 
-  const handleAddTodo = async (todoId: TodoId) => {
-    if (!todoId) {
-      return;
-    }
-    await dispatch(addTodo(todoId));
+  const handleAddTodo = async (requestBody: TodosType) => {
+
+    await dispatch(addTodo(requestBody));
   };
 
 

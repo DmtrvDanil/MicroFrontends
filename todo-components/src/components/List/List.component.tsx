@@ -6,7 +6,7 @@ export const List = (props) => {
     return (
         <ul>
             {items.map((item, index) => (
-                <li key={index}>{item.title}</li>
+                <li key={index}>{item.text}</li>
             ))}
         </ul>
     );
